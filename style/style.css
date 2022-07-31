@@ -1,0 +1,61 @@
+/*general*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    behavior: smooth;
+}
+.nav-item{
+    position: relative;
+}
+.nav-item::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color:rgb(0, 158, 231) ;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+.nav-item:hover:after{
+    width: 90%;
+}
+.logo{
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.logo:hover{
+    transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+}
+/**********************************/
+/**********start header*********************/
+.navbar{
+    background-color: rgba(0, 23, 60, 0.683) !important;
+    border-bottom: 5px solid rgb(0, 126, 185);
+}
+header{
+    
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../images/home.jpg);
+}
+
+.header-info{
+    padding-top: 100px;
+}
+/***********************Explore******************************/
+.Explore,.create2{
+    background-color: #333333;
+}
